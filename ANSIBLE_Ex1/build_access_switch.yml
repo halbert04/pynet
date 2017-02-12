@@ -1,0 +1,6 @@
+---
+- name: Generating Access Switches configuration files   
+  hosts: localhost
+  
+  roles:
+   - ACCESS_SWITCH
