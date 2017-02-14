@@ -1,0 +1,5 @@
+---
+- name: Generating Access Switches configurations
+  template: src=simple_switch.j2 dest=/home/amartinez/pynet/ANSIBLE_Ex2/roles/ACCESS_SWITCH/configs/{{item.hostname}}.txt
+  with_items: "{{acc_switch}}"
+            
